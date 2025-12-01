@@ -12,12 +12,13 @@ spec:
     metadata:
       labels:
         app: gettodo 
-    containers: 
-    - name: gettodo
-      image: anjaliacr.azurecr.io/gettodo:v1 
-      ports:
-      - containerPort: 8000
-      env:
-      - name: CONNECTION_STRING
-        value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:anjaliserver.database.windows.net,1433;Database=anjalidb;Uid=server;Pwd=#Elemental@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
-    
+    spec:
+      containers: 
+      - name: gettodo
+        image: anjaliacr.azurecr.io/gettodo:v1 
+        ports:
+        - containerPort: 8000
+        env:
+        - name: CONNECTION_STRING
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:anjaliserver.database.windows.net,1433;Database=anjalidb;Uid=server;Pwd=#Elemental@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+      
