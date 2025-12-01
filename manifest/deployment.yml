@@ -10,7 +10,8 @@ spec:
       app: gettodo
   template: 
     metadata:
-      app: gettodo 
+      labels:
+        app: gettodo 
     containers: 
     - name: gettodo
       image: anjaliacr.azurecr.io/gettodo:v1 
