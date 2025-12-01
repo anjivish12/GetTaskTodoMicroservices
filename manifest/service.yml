@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: Service 
 metadata:
-    app: gettodo 
+    name: gettodo 
 spec:
   type: ClusterIP 
   selector:
