@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Service 
+metadata:
+  labels:
+    app: gettodo 
+spec:
+  type: ClusterIP 
+  selector:
+    app: gettodo
+  ports: 
+  - port: 80
+    targetPort: 8000
