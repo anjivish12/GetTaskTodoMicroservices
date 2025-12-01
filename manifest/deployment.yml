@@ -16,7 +16,7 @@ spec:
     - name: gettodo
       image: anjaliacr.azurecr.io/gettodo:v1 
       ports:
-      - containerPort: 3000
+      - containerPort: 8000
       env:
       - name: CONNECTION_STRING
         value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:anjaliserver.database.windows.net,1433;Database=anjalidb;Uid=server;Pwd=#Elemental@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
