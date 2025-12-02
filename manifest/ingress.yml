@@ -4,7 +4,7 @@ metadata:
   name: gettodo-ingress
 
 spec:
-  ingressClassName: nginx
+  ingressClassName: azure-application-gateway
   rules:
   - host: get-todo-api.dhoomdhoom.shop
     http: 
